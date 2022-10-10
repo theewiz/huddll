@@ -1,0 +1,150 @@
+:root {
+    --primary-color-1: rgb(103, 75, 175);
+    --primary-color-2: rgb(232, 130, 232);
+
+    --font-family-1: 'Open Sans', sans-serif;
+    --font-family-2: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--primary-color-1) url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    line-height: 1.5;
+}
+
+header {
+    margin-top: 28px;
+    padding-left: 40px;
+}
+
+header img {
+    width: 16%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+main .one {
+    padding-left: 40px;
+    padding-top: 80px;
+}
+
+main .one img {
+    width: 100%;
+}
+
+main .two {
+    font-family: var(--font-family-1);
+    color: white;
+    width: 80%;
+    margin: 40px;
+    padding-top: 100px;
+}
+
+.two button {
+    padding: 20px 24px;
+    width: 50%;
+    border: none;
+    border-radius: 40px;
+    color: var(--primary-color-1);
+    background-color: rgb(250, 247, 247);
+    font-size: 16px;
+    letter-spacing: .6px;
+}
+
+.two h1 {
+    margin-bottom: 20px;
+}
+
+.two p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.logos {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 80px;
+}
+
+.logos img {
+    width: 3%;
+}
+
+
+
+
+
+@media (max-width:900px) {
+    header img {
+        width: 40%;
+    }
+
+    header {
+        margin-top: 40px;
+        padding-left: 20px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    main .one {
+        margin: 0 auto;
+        padding: 0 20px;
+        margin-top: 80px;
+        margin-bottom: 0;
+        /* background-color: bisque; */
+    }
+
+    main .one img {
+        width: 100%;
+    }
+
+    main .two {
+        margin: 0 auto;
+        margin-top: 80px;
+        /* background-color: beige; */
+        width: 80%;
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .two h1 {
+        font-size: 1.4rem;
+        margin-top: 0;
+    }
+
+    .two p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .two button {
+        padding: 16px 24px;
+        margin: 0 auto;
+        font-size: 12px;
+    }
+
+    .logos {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .logos img {
+        width: 8%;
+        margin-top: 80px;
+    }
+}
